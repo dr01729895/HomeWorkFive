@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!--
+    File: /domenic_ruocco_hw5/index.html
+    Assignment: HW5
+    Domenic Ruocco, UML Comp Sci, druocco@cs.uml.edu
+    Course: 91.61 GUI Programming I
+    Copyright (c) 2020 by Domenic Ruocco. All rights reserved.
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel= "stylesheet" href="./css/style.css">
+        <title>
+            Homework #5
+        </title>
+    </head>
+    <body>
+
+    <form>
+        <label for="MinCol">Minimum Column Value</label>
+        <input type="number" onClick="this.select();" id="MinCol" value="1">
+        <label for="MaxCol">Maximum Column Value</label>
+        <input type="number" onClick="this.select();" id="MaxCol" value="10">
+        <label for="MinRow">Minimum Row Value</label>
+        <input type="number" onClick="this.select();" id="MinRow" value="1">
+        <label for="MaxRow">Maximum Row Value</label>
+        <input type="number" onClick="this.select();" id="MaxRow" value="10">
+        <button type="button" id="Submit"> Create Table </button>
+        <div id="ErrorLogs"></div>
+    </form>
+
+    <table><tbody id="MultTable"></tbody></table>
+
+    <script src="./js/script.js"></script>
+    </body>
+</html>
